@@ -1,0 +1,12 @@
+# Question 1
+a = int(input("Input first no.: "))
+b = int(input("Input second no.: "))
+
+print("Sum: ", a+b)
+
+# Question 2
+x = int(input("Input a number: "))
+if x % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
