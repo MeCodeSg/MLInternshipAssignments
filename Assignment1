@@ -1,12 +1,96 @@
-# Question 1
-a = int(input("Input first no.: "))
-b = int(input("Input second no.: "))
+## Assignment 1
 
-print("Sum: ", a+b)
+# Ques1
+num1=int(input("Input first number: "))
+num2=int(input("Input second number: "))
 
-# Question 2
-x = int(input("Input a number: "))
-if x % 2 == 0:
+print("Sum", num1+num2)
+
+# Ques2
+num=int(input("Input a number: "))
+if num%2==0:
     print("Even")
 else:
     print("Odd")
+
+# Ques3
+fact=1
+num=int(input("Input a number: "))
+for i in range(2, num+1):
+    fact*=i
+
+print("Factorial of {}: {}".format(num, fact))
+
+# Ques4
+name=input("Enter your name here: ")
+print("Welcome, {}. Good Morning!!". format(name))
+
+# Ques5
+str=input("Enter to write...")
+smpfile=open("demo.txt", "w")
+print(str, file=smpfile)
+
+# Ques6
+
+
+# Ques7
+str=input("Enter a string: ")
+print("Length: ", len(str))
+
+# Ques8
+
+
+# Ques9
+str=input("Enter a string: ")
+substr=input("Enter a substring to check: ")
+print(substr in str)
+
+# Ques10
+str=input("Enter a string: ")
+print(str.upper())
+
+# Ques11
+n=int(input("Enter a number: "))
+
+def fibonacci(n):
+    a=0
+    b=1
+    for i in range(n):
+        print(a)
+        c=a+b
+        a=b
+        b=c
+fibonacci(n)
+
+# Ques12
+n=int(input("Enter a number: "))
+
+def sumOfDigits(n):
+    count=0
+    while(n>0):
+        n//=10
+        count+=1
+    return count
+
+print(sumOfDigits(n)) 
+
+# Ques13
+birth_year=int(input("Enter your birth year: "))
+
+def calculateAge(birth_year):
+    return 2024-birth_year
+
+print(calculateAge(birth_year))
+
+# Ques14
+def countFrequency(str):
+    dic={}
+    for i in str:
+        if dic[i]>=1:
+            dic[i]+=1
+        else:
+            dic[i]=1
+    return dic
+
+str=input("Enter a string: ")
+print(countFrequency(str))
